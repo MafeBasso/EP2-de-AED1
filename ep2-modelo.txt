@@ -1,0 +1,61 @@
+//--------------------------------------------------------------
+// NOMES DOS RESPONSÁVEIS: blablabla E blablabla
+//--------------------------------------------------------------
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+#include <malloc.h>
+#include <string.h>
+
+// ######### ESCREVA O NROUSP DO PRIMEIRO INTEGRANTE AQUI
+char* nroUSP1() {
+    return("0000000");
+}
+
+// ######### ESCREVA O NROUSP DO SEGUNDO INTEGRANTE AQUI (OU DEIXE ZERO)
+char* nroUSP2() {
+    return("0000000");
+}
+
+// ######### ESCREVA O NRO DO SEU GRUPO TAL QUAL CADASTRADO (LINK NO PDF DO EP) 
+char* grupo() {
+    return("00");
+}
+
+
+// elementos da matriz esparsa (use tambem se quiser criar listas auxiliares)
+typedef struct estr {
+        int info;
+	int lin;
+	int col;
+        struct estr *proxC;   // ponteiro para a direita
+        struct estr *proxL;   // ponteiro para baixo
+} NO;
+
+// matriz 10 x 10 (a linha e coluna 0 são desprezadas)
+typedef struct {
+	NO* LIN[11]
+	NO* COL[11]
+} LISTASCR;	
+
+
+
+// funcao principal
+void substituir(LISTASCR* m, int i, int j);
+
+
+//------------------------------------------
+// O EP consiste em implementar esta funcao
+// e outras funcoes auxiliares que esta
+// necessitar
+//------------------------------------------
+void substituir(LISTASCR* m, int i, int j) {
+
+	// crie seu código aqui
+
+}
+
+
+// por favor nao entregue sua função main() nem seu código de teste
+
